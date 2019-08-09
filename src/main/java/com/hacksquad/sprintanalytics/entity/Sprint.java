@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name="sprint")
@@ -93,5 +94,23 @@ public class Sprint implements Serializable {
                 ", closed=" + closed +
                 ", projectName='" + projectName + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Sprint)) return false;
+        Sprint sprint = (Sprint) o;
+        return getId() == sprint.getId() &&
+                Objects.equals(getName(), sprint.getName()) &&
+                Objects.equals(getStartDate(), sprint.getStartDate()) &&
+                Objects.equals(getEndDate(), sprint.getEndDate()) &&
+                Objects.equals(getClosed(), sprint.getClosed()) &&
+                Objects.equals(getProjectName(), sprint.getProjectName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getName(), getStartDate(), getEndDate(), getClosed(), getProjectName());
     }
 }

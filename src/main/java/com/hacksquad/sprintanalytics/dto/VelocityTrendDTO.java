@@ -1,25 +1,25 @@
 package com.hacksquad.sprintanalytics.dto;
 
 public class VelocityTrendDTO {
-    private String sprintName;
-    private float velocity;
+    private String name;
+    private float value;
     private int committedStory;
 
 
-    public String getSprintName() {
-        return sprintName;
+    public String getName() {
+        return name;
     }
 
-    public void setSprintName(String sprintName) {
-        this.sprintName = sprintName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public float getVelocity() {
-        return velocity;
+    public float getValue() {
+        return value;
     }
 
-    public void setVelocity(float velocity) {
-        this.velocity = velocity;
+    public void setValue(float value) {
+        this.value = value;
     }
 
     public int getCommittedStory() {
@@ -30,9 +30,9 @@ public class VelocityTrendDTO {
         this.committedStory = committedStory;
     }
 
-    public VelocityTrendDTO(String sprintName, float velocity, int committedStory) {
-        this.sprintName = sprintName;
-        this.velocity = velocity;
+    public VelocityTrendDTO(String name, float value, int committedStory) {
+        this.name = name;
+        this.value = value;
         this.committedStory = committedStory;
     }
 }

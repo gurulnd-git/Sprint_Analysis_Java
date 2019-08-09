@@ -9,6 +9,19 @@ public class SprintPriorityDTO {
     private int highest;
     private int medium;
 
+
+    public SprintPriorityDTO(String sprintName, int lowest, int high, int low, int highest, int medium) {
+        this.sprintName = sprintName;
+        this.lowest = lowest;
+        this.high = high;
+        this.low = low;
+        this.highest = highest;
+        this.medium = medium;
+    }
+
+    public SprintPriorityDTO() {
+    }
+
     public String getSprintName() {
         return sprintName;
     }
