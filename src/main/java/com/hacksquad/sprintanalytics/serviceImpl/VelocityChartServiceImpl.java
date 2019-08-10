@@ -19,7 +19,7 @@ public class VelocityChartServiceImpl implements VelocityChartService {
     @Autowired
     VelocityChartComponent velocityChartComponent;
 
-	// velocity
+	// velocity test
     public  List<VelocityTrendDTO> getVelocityTrend() {
      return velocityChartComponent.calculateVelocityTrend();
     }
