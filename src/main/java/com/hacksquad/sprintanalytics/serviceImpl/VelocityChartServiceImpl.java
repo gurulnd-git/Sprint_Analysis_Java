@@ -19,7 +19,7 @@ public class VelocityChartServiceImpl implements VelocityChartService {
     @Autowired
     VelocityChartComponent velocityChartComponent;
 
-
+	// velocity
     public  List<VelocityTrendDTO> getVelocityTrend() {
      return velocityChartComponent.calculateVelocityTrend();
     }
@@ -36,4 +36,5 @@ public class VelocityChartServiceImpl implements VelocityChartService {
     {
         return   velocityChartComponent.calculatePriority();
     }
+
 }
