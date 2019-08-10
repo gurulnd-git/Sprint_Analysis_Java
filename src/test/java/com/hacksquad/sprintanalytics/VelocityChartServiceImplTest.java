@@ -7,7 +7,6 @@ public class VelocityChartServiceImplTest {
     public void TestImpl() {
         // TODO Auto-generated method stub
         // Sample tester = new Sample(); // MyClass is tested
-        // assert statements
         String S1= "hello world";
        // assertEquals(S1,tester.Hello());
     }
